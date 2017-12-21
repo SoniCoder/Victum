@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 Jun, 2016, 4:14:51 PM
+    Author     : Addict
+*/
+#main_gp{
+    -fx-background-color: #ffffff;
+}
+
+#header_lbl{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 30;
+}
+#content{
+    -fx-background-color: #00749b;
+}
+
+#content_lbl{
+    -fx-background-color: #ffffff;
+}
+
+#content_list{
+    -fx-background-color: #ffffff;
+}
+
+#header{
+    -fx-background-color: #0099cc;
+}
+
+.button{
+    -fx-background-color: #0099cc;
+    -fx-text-fill: #ffffff;
+}
+
+.button:hover{
+    -fx-background-color: #00bfff;
+}
+
+.root{
+    -fx-background-color: #00749b;
+}
+
+#savePane{
+    -fx-background-color: #000000;
+}

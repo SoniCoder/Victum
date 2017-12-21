@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="409.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="victum.SteelInspectionController">
+    <stylesheets>
+        <URL value="@steelinspection.css" />
+    </stylesheets>
+   <children>
+      <GridPane fx:id="main_gp" alignment="CENTER" gridLinesVisible="true" layoutX="4.0" layoutY="202.0" prefHeight="194.0" prefWidth="987.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="154.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="128.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="80.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="152.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="166.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="158.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="166.0" text="Name of Inspecting Official" />
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="301.0" text="Condition of Structure" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="90.0" prefWidth="301.0" text="Action Taken" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" prefHeight="90.0" prefWidth="301.0" text="Initial of Inspecting Official" GridPane.columnIndex="3" />
+            <Label alignment="CENTER" prefHeight="90.0" prefWidth="301.0" text="Detail of Repair Done with Date" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" />
+            <TextArea fx:id="nameOfficial" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.rowIndex="1" />
+            <TextArea fx:id="condStructure" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea fx:id="actionTaken" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextArea fx:id="initialInspector" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextArea fx:id="detailRepair" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="14.0" layoutY="6.0" text="WORKS SUPERVISOR" textFill="WHITE" />
+      <GridPane layoutX="14.0" layoutY="28.0" prefHeight="158.0" prefWidth="477.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="286.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="86.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="163.0" text="1.) Description of Structure" textFill="WHITE" />
+            <Label text="2.) Type of truss / column" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label text="3.) Type of Bed block/ pedestal with details of fixture" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label text="4.) Span / Height" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label text="5.) Date of painting" textFill="WHITE" GridPane.rowIndex="4" />
+            <TextField fx:id="desc" GridPane.columnIndex="1" />
+            <TextField fx:id="trussType" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="bedType" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="span" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="datePaint" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="574.0" layoutY="46.0" prefHeight="75.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Section" textFill="WHITE" />
+            <TextField fx:id="section" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
